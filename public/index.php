@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/composer/autoload_real.php';
-require 'src/Hello.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-use App\Hello;
+use Wild\App\Hello;
+
+$hello = new Hello();
+echo $hello->talk();
